@@ -158,7 +158,7 @@ li.changelog-badge-container:hover .changelog-badge.unread {
   font-size: 18px;
 }
 
-.changelog-list .entry .content img, .changelog-item .entry .content img {
+.changelog-item .entry .content img {
   max-width: 640px;
 }
 
@@ -191,7 +191,7 @@ li.changelog-badge-container:hover .changelog-badge.unread {
   max-width: 365px;
 }
 
-.changelog-sidebar .entry img {
+.changelog-sidebar .changelog-list .entry img {
   max-width: 100%;
 }
 
