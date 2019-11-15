@@ -1,0 +1,16 @@
+<li class="entry">
+  <%= if @entry.kind && String.length(to_string(@entry.kind)) > 0 do %>
+    <span class="kind"> 
+      <%= changelog_kind_badge(@entry.kind) %>
+    </span>
+  <% end %>
+  <span class="date">on <%= @entry.changed_at%></span>
+  <div class="entry-header">
+    <span class="title"> 
+      <%= @entry.title %>
+    </span>
+  </div>
+  <div class="content">
+    <%= raw(@html) %>
+  </div>
+</li>

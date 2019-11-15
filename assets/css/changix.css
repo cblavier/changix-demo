@@ -1,0 +1,211 @@
+@keyframes changelog-heart-beat {
+  50% {transform: scale(1.50);}
+}
+
+li.changelog-badge-container {
+  height: 60px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+li.changelog-badge-container .changelog-badge {
+  display: block;
+  border-radius: 50%;
+  transition: all 0.1s ease-in-out;
+
+  background-color: #dddee4;
+  width: 12px;
+  height: 12px;
+}
+
+li.changelog-badge-container .changelog-badge.unread {
+  background-color: #E05F36;
+  width: 18px;
+  height: 18px;
+  animation-name: changelog-heart-beat;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+li.changelog-badge-container:hover .changelog-badge {
+  width: 16px;
+  height: 16px;
+  background-color: #CCC;
+}
+
+li.changelog-badge-container:hover .changelog-badge.unread {
+  width: 24px;
+  height: 24px;
+  animation-name: none;
+  background-color: #E05F36;
+}
+
+.changelog-sidebar {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  max-width: 100%;
+  background: white;
+  box-shadow: 0 0 1px rgba(99, 114, 130, 0.32), 0 8px 16px rgba(27, 39, 51, 0.08);
+  overflow-y: scroll;
+  display: none;
+  z-index: 5000;
+}
+
+.changelog-sidebar .changelog-header {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 10px 0;
+  position: relative;
+}
+
+.changelog-sidebar .changelog-title {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #E05F36;
+  font-weight: bold;
+}
+
+.changelog-sidebar .close-btn {
+  position: absolute;
+  left: 16px;
+  top: 3px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #CCC;
+}
+
+.changelog-sidebar .close-btn:hover {
+  color: #AAA;
+} 
+
+.changelog-sidebar.open {
+  display: block;
+}
+
+.changelog-sidebar .all-entries {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: underline;
+  color: #a09f9f;
+  border-top: 1px solid #f1f1f1;
+}
+
+.changelog-list, .changelog-item {
+  margin: 0 auto;
+}
+
+.changelog-sidebar .entry, .changelog-list .entry, .changelog-item .entry {
+  list-style-type: none;
+  padding: 5px 10px 15px;
+}
+
+.changelog-list .entry .title, .changelog-item .entry .title {
+  font-weight: bold;
+  color: #E05F36;
+}
+
+.changelog-list .entry .content, .changelog-item .entry .content {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.changelog-list .entry .content h1, .changelog-item .entry .content h1 {
+  font-family: "Open Sans", Helvetica,Arial,sans-serif;
+  color: #818181;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.changelog-list .entry .content h2, .changelog-item .entry .content h2 {
+  font-family: "Open Sans", Helvetica,Arial,sans-serif;
+  color: #818181;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.changelog-list .entry .content h3, .changelog-item .entry .content h3 {
+  font-family: "Open Sans", Helvetica,Arial,sans-serif;
+  color: #818181;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.changelog-list .entry .content h4, .changelog-item .entry .content h4 {
+  font-family: "Open Sans", Helvetica,Arial,sans-serif;
+  color: #818181;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.changelog-list .entry .content h5, .changelog-item .entry .content h5 {
+  font-family: "Open Sans", Helvetica,Arial,sans-serif;
+  color: #818181;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.changelog-list .entry .content img, .changelog-item .entry .content img {
+  max-width: 640px;
+}
+
+.changelog-list .entry, .changelog-item .entry {
+  border-top: 1px solid #f1f1f1;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.changelog-list .entry .date, .changelog-item .entry .date {
+  color: #a09f9f;
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+
+.changelog-list .entry  a:hover, .changelog-item .entry a:hover {
+  display: block;
+    background: #ededed;
+}
+
+.changelog-list {
+  padding: 0;
+}
+
+.changelog-list .entry .entry-header, .changelog-item .entry .entry-header {
+  display: inline-block;
+  max-width: 365px;
+}
+
+.changelog-sidebar .entry img {
+  max-width: 100%;
+}
+
+.badge {
+  min-width: 10px;
+  color: #fff;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: .688em;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 2px 7px 4px;
+}

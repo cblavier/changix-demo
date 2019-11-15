@@ -1,0 +1,4 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "Changix" %></h1>
+  <p>Click on the pulsating dot to toggle the changelog sidebar!</p>
+</section>

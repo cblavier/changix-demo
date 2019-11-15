@@ -1,0 +1,5 @@
+<h2>Updates</h2>
+
+<div class="changelog-item">
+  <%= render "_entry.html", conn: @conn, entry: @entry, html: @entry.full_html %>
+</div>

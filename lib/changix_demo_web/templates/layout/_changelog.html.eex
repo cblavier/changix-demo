@@ -1,0 +1,11 @@
+<sidebar class="changelog-sidebar">
+
+  <div class="changelog-header">
+    <div class="changelog-title">Updates</div>
+    <span class="close-btn">&times;</span>
+  </div>
+
+  <%= ChangixDemoWeb.ChangelogView.render "_list.html", conn: @conn, entries: changelog_entries()%>
+  <%= link "All updates here", to: Routes.changelog_path(@conn, :index), class: "all-entries"%>
+
+</sidebar>

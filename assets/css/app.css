@@ -1,0 +1,12 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+@import "./changix.css";
+
+h2 {
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  color: #7C7C7C;
+  font-weight: bold;
+}

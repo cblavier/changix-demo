@@ -1,0 +1,7 @@
+<ul class="changelog-list">
+  <%= for entry <- @entries do %> 
+    <%=  link to: Routes.changelog_path(@conn, :show, NaiveDateTime.to_iso8601(entry.changed_at)) do %>
+      <%= render "_entry.html", entry: entry, html: entry.summary_html %>
+    <% end %>
+  <% end %>
+</ul>
